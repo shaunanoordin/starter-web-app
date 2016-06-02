@@ -20,7 +20,7 @@ var App = function App() {
   _classCallCheck(this, App);
 
   this.console = document.getElementById("console");
-  this.console.innerHTML = "This is a starter template for JS projects!";
+  this.console.innerHTML = "This is a starter template for JS projects.";
 };
 //==============================================================================
 
