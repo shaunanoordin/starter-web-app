@@ -8,13 +8,19 @@ Starter tempalte for JS projects
 ********************************************************************************
  */
 
+import {ImportExample} from "./importExample.js";
+
 /*  Primary App Class
  */
 //==============================================================================
 class App {
   constructor() {
+    let importExample = new ImportExample("HI THERE");
+    
     this.console = document.getElementById("console");
-    this.console.innerHTML = "This is a starter template for JS projects.";
+    this.console.innerHTML =
+      "This is a starter template for JS projects. <br>" +
+      importExample.getText();
   }
 }
 //==============================================================================
