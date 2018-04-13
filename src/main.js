@@ -2,7 +2,7 @@
 Starter JS
 ----------
 
-Starter template for JS projects.
+Starter template for JavaScript web app projects.
 
 (Shaun A. Noordin | shaunanoordin.com | 20180413)
  */
