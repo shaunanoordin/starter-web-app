@@ -8,7 +8,7 @@ export class ImportExample {
   }
   
   getText() {
-    return "An ImportExample class was imported and has the text: " + this.txt;
+    return "An ImportExample class was imported; it has the text: " + this.txt;
   }
 }
 //==============================================================================
