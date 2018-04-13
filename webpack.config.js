@@ -1,18 +1,19 @@
+var path = require('path');
+
 module.exports = {
   entry: "./src/main.js",
   output: {
-    filename: "./app/[name].js"
+    filename: "[name].js",
+    path: path.resolve(__dirname, 'app'),
   },
+  mode: "development",
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        use: "babel-loader"
       }
     ]
-  },
-  resolve: {
-    extensions: ["", ".js"]
   },
 }
