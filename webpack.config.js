@@ -4,15 +4,12 @@ module.exports = {
     filename: "./app/[name].js"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        use: "babel-loader"
       }
     ]
-  },
-  resolve: {
-    extensions: ["", ".js"]
   },
 }
