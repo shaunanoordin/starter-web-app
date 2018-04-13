@@ -1,11 +1,10 @@
 /*  
 Starter JS
-==========
+----------
 
-Starter tempalte for JS projects
+Starter template for JS projects.
 
-(Shaun A. Noordin || shaunanoordin.com || 20160509)
-********************************************************************************
+(Shaun A. Noordin | shaunanoordin.com | 20180413)
  */
 
 import {ImportExample} from "./importExample.js";
