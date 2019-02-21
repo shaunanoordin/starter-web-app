@@ -4,7 +4,7 @@ var server = express();
 var SERVER = {
   IP: '0.0.0.0',
   PORT: 3000
-}  
+};
 
 server.use(express.static(__dirname));
 

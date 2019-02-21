@@ -36,17 +36,32 @@
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
 /******/ 		}
 /******/ 	};
 /******/
 /******/ 	// define __esModule on exports
 /******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
 /******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
 /******/ 	};
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
@@ -75,11 +90,11 @@
 /*!******************************!*\
   !*** ./src/importExample.js ***!
   \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: ImportExample */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n/*  Example Class\n    Demonstrates ES6 import function in main.js\n */\n//==============================================================================\nvar ImportExample = exports.ImportExample = function () {\n  function ImportExample() {\n    var txt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : \"DEFAULT TEXT\";\n\n    _classCallCheck(this, ImportExample);\n\n    this.txt = txt;\n  }\n\n  _createClass(ImportExample, [{\n    key: \"getText\",\n    value: function getText() {\n      return \"An ImportExample class was imported; it has the text: \" + this.txt;\n    }\n  }]);\n\n  return ImportExample;\n}();\n//==============================================================================\n\n//# sourceURL=webpack:///./src/importExample.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ImportExample\", function() { return ImportExample; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n/*  Example Class\n    Demonstrates ES6 import function in main.js\n */\n//==============================================================================\nvar ImportExample =\n/*#__PURE__*/\nfunction () {\n  function ImportExample() {\n    var txt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : \"DEFAULT TEXT\";\n\n    _classCallCheck(this, ImportExample);\n\n    this.txt = txt;\n  }\n\n  _createClass(ImportExample, [{\n    key: \"getText\",\n    value: function getText() {\n      return \"An ImportExample class was imported; it has the text: \" + this.txt;\n    }\n  }]);\n\n  return ImportExample;\n}(); //==============================================================================\n\n//# sourceURL=webpack:///./src/importExample.js?");
 
 /***/ }),
 
@@ -87,11 +102,11 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _importExample = __webpack_require__(/*! ./importExample.js */ \"./src/importExample.js\");\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } } /*  \n                                                                                                                                                          Starter JS\n                                                                                                                                                          ----------\n                                                                                                                                                          \n                                                                                                                                                          Starter template for JS projects.\n                                                                                                                                                          \n                                                                                                                                                          (Shaun A. Noordin | shaunanoordin.com | 20180413)\n                                                                                                                                                           */\n\n/*  Primary App Class\n */\n//==============================================================================\nvar App = function App() {\n  _classCallCheck(this, App);\n\n  var importExample = new _importExample.ImportExample(\"HI THERE\");\n\n  this.console = document.getElementById(\"console\");\n  this.console.innerHTML = \"This is a starter template for JS projects. <br>\" + importExample.getText();\n};\n//==============================================================================\n\n/*  Initialisations\n */\n//==============================================================================\n\n\nvar app;\nwindow.onload = function () {\n  window.app = new App();\n};\n//==============================================================================\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _importExample_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./importExample.js */ \"./src/importExample.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n/*  \nStarter JS\n----------\n\nStarter template for JavaScript web app projects.\n\n(Shaun A. Noordin | shaunanoordin.com | 20180413)\n */\n\n/*  Primary App Class\n */\n//==============================================================================\n\nvar App = function App() {\n  _classCallCheck(this, App);\n\n  var importExample = new _importExample_js__WEBPACK_IMPORTED_MODULE_0__[\"ImportExample\"](\"HI THERE\");\n  this.console = document.getElementById(\"console\");\n  this.console.innerHTML = \"This is a starter template for JS projects. <br>\" + importExample.getText();\n}; //==============================================================================\n\n/*  Initialisations\n */\n//==============================================================================\n\n\nvar app;\n\nwindow.onload = function () {\n  window.app = new App();\n}; //==============================================================================\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
