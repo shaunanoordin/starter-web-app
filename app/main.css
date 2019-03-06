@@ -31,7 +31,7 @@ table {
 }
 table td,
 table th {
-  border: 1px solid dark-colour;
+  border: 1px solid #444;
 }
 
 #app {
@@ -41,7 +41,7 @@ table th {
   height: 100%;
   max-width: 50em;
   margin: 0 auto;
-  background: #eee;
+  background: #fff;
 }
 
 #app > header,
@@ -60,7 +60,7 @@ table th {
 #app > main {
   flex: 1 1 auto;
   padding: 1em;
-  background: #eee;
+  background: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

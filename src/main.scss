@@ -43,7 +43,7 @@ table {
   
   td,
   th {
-    border: 1px solid dark-colour;
+    border: 1px solid $dark;
   }
 }
   
@@ -54,7 +54,7 @@ table {
   height: 100%;
   max-width: 50em;
   margin: 0 auto;
-  background: $light;
+  background: $white;
 }
 
 #app > header,
@@ -73,5 +73,5 @@ table {
 #app > main {
   flex: 1 1 auto;
   padding: 1em;
-  background: $light;
+  background: $white;
 }
