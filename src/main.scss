@@ -1,3 +1,14 @@
+$white: #fff;
+$light: #eee;
+$light-grey: #ccc;
+$grey: #888;
+$dark-grey: #666;
+$dark: #444;
+$black: #000;
+
+$primary: #c44;
+$primary-highlight: #e66;
+
 * {
   box-sizing: border-box;
 }
@@ -5,8 +16,8 @@
 :root {
   font-family: "Lucida Console", monospace;
   font-size: 16px;
-  background: #444 url("../assets/simple-bg.png");
-  color: #444;
+  background: $dark url("../assets/simple-bg.png");
+  color: $dark;
 }
 
 html,
@@ -18,22 +29,24 @@ body {
 }
 
 a {
-  color: #c44;
+  color: $primary;
   text-decoration: none;
-}
-a:hover {
-  color: #e66;
+  
+  &:hover {
+    color: $primary-highlight;
+  }
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  
+  td,
+  th {
+    border: 1px solid dark-colour;
+  }
 }
-table td,
-table th {
-  border: 1px solid dark-colour;
-}
-
+  
 #app {
   display: flex;
   flex-direction: column;
@@ -41,26 +54,24 @@ table th {
   height: 100%;
   max-width: 50em;
   margin: 0 auto;
-  background: #eee;
+  background: $light;
 }
 
 #app > header,
 #app > footer {
   flex: 0 0 auto;
   padding: 1em;
-  background: #c44;
-  color: #eee;
-}
-#app > header h1,
-#app > footer h1 {
-  margin: 0;
-  padding: 0;
+  background: $primary;
+  color: $light;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #app > main {
   flex: 1 1 auto;
   padding: 1em;
-  background: #eee;
+  background: $light;
 }
-
-/*# sourceMappingURL=main.css.map */

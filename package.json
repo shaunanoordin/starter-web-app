@@ -1,24 +1,23 @@
 {
   "name": "starter-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/shaunanoordin/starter-js/"
   },
   "homepage": "https://github.com/shaunanoordin/starter-js/",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
-    "stylus": "^0.54.5",
+    "sass": "^1.17.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "start": "webpack && stylus src -o app && node server.js",
-    "dev": "concurrently \"webpack --watch\" \"stylus src -o app --watch\" \"node server.js\""
+    "start": "webpack && sass src:app && node server.js",
+    "dev": "concurrently \"webpack --watch\" \"sass --watch src:app\" \"node server.js\""
   }
 }
