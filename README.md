@@ -2,18 +2,20 @@
 
 Starter template for JavaScript web app projects.
 
-## Development
+Created by [Shaun A. Noordin](https://shaunanoordin.com).
 
-- This is a web app built on HTML5, JavaScript and CSS.
-- It uses Babel to transpile 'modern' ES6 code into 'current' (2019) JavaScript code.
-- It uses Webpack to bundle JS files together. (Important for making the transpiled ES6 'import' functionality work.)
-- Its also uses Stylus to make writing CSS easier.
-- Developing the web app requires Node.js installed on your machine and a handy command line interface. (Bash, cmd.exe, etc)
-- However, the _compiled_ web app itself can be run simply by opening the `index.html` in a web browser. (Chrome, Firefox, etc)
+## How to Use
+
+Start the web app by accessing `index.html` from your web browser. (Compatible with Chrome 73 and Firefox 66.)
+
+## Development Notes
+
+- This is a web app built on HTML5, JavaScript, and CSS.
+- Developing the web app requires [Node](https://nodejs.org/) and NPM installed on your machine and a handy command line interface. (Bash, cmd.exe, etc)
 
 Project anatomy:
 
-- Source JS (ES6 JavaScript) and STYL (Stylus CSS) files are in the `/src` folder.
+- Source JavaScript and Sass files are in the `/src` folder.
 - Compiled JS and CSS files are in the `/app` folder.
 - Media assets are meant to be placed in the `/assets` folder, but this is optional.
 - Entry point is `index.html`.
@@ -21,12 +23,5 @@ Project anatomy:
 Starting the project:
 
 1. Install the project dependencies by running `npm install`
-2. Run `npm start` to start the server.
-3. Open `http://localhost:3000` on your browser to view the app.
-
-Alternatively, there's a developer mode:
-
-1. `npm install`
-2. `npm run dev`
-3. `http://localhost:3000`
-4. Changes to the JS and STYL files will now be compiled automatically; i.e. Babel/Webpack and Stylus now _watch_ the files. Refreshing the browser window should should show the latest edits.
+2. Run `npm start` to start the server, or `npm run dev` to start the server in dev mode (i.e. source files will be watched and changes compiled dynamically.)
+3. Open `http://localhost:3000` on your web browser to view the app.
