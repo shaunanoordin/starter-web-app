@@ -1,11 +1,11 @@
 {
-  "name": "starter-js",
-  "version": "0.0.5",
+  "name": "starter-web-app",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shaunanoordin/starter-js/"
+    "url": "https://github.com/shaunanoordin/starter-web-app/"
   },
-  "homepage": "https://github.com/shaunanoordin/starter-js/",
+  "homepage": "https://github.com/shaunanoordin/starter-web-app/",
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
