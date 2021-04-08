@@ -6,7 +6,7 @@ Created by [Shaun A. Noordin](https://shaunanoordin.com).
 
 ## How to Use
 
-Start the web app by accessing `index.html` from your web browser. (Compatible with Chrome 73 and Firefox 66.)
+Start the web app by accessing `index.html` from your web browser. (Compatible with Chrome 89 and Firefox 87.)
 
 ## Development Notes
 
