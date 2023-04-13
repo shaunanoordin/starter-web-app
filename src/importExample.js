@@ -3,12 +3,12 @@
  */
 //==============================================================================
 export class ImportExample {
-  constructor(txt = "DEFAULT TEXT") {
+  constructor(txt = 'DEFAULT TEXT') {
     this.txt = txt;
   }
   
   getText() {
-    return "An ImportExample class was imported; it has the text: " + this.txt;
+    return 'An ImportExample class was imported; it has the text: ' + this.txt;
   }
 }
 //==============================================================================

@@ -4,22 +4,22 @@ Starter JS
 
 Starter template for JavaScript web app projects.
 
-(Shaun A. Noordin | shaunanoordin.com | 20180413)
+(Shaun A. Noordin | shaunanoordin.com | 20230413)
  */
 
-import { ImportExample } from "@src/importExample.js";
+import { ImportExample } from '@src/importExample.js'
 
 /*  Primary App Class
  */
 //==============================================================================
 class App {
   constructor() {
-    let importExample = new ImportExample("HI THERE");
+    const importExample = new ImportExample('HI THERE')
 
-    this.console = document.getElementById("console");
+    this.console = document.getElementById('console')
     this.console.innerHTML =
-      "This is a starter template for JS projects. <br>" +
-      importExample.getText();
+      'This is a starter template for JS projects. <br>' +
+      importExample.getText()
   }
 }
 //==============================================================================
@@ -27,8 +27,8 @@ class App {
 /*  Initialisations
  */
 //==============================================================================
-var app;
+var app
 window.onload = function() {
-  window.app = new App();
-};
+  window.app = new App()
+}
 //==============================================================================
