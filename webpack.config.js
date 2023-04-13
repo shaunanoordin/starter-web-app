@@ -1,18 +1,23 @@
 var path = require('path');
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: './src/main.js',
   output: {
-    filename: "[name].js",
+    filename: '[name].js',
     path: path.resolve(__dirname, 'app'),
+    assetModuleFilename: 'dynamic-assets/[name][ext][query]'
   },
-  mode: "development",
+  mode: 'development',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader"
+        use: 'babel-loader'
+      },
+      {
+        test: /\.png$/,
+        type: 'asset/resource'
       }
     ]
   },

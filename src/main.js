@@ -7,6 +7,7 @@ Starter template for JavaScript web app projects.
 (Shaun A. Noordin | shaunanoordin.com | 20230413)
  */
 
+import logo from '@src/logo-32x32.png'
 import { ImportExample } from '@src/importExample.js'
 
 /*  Primary App Class
